@@ -1,0 +1,19 @@
+import random
+
+num_of_flips = int(input('Enter number of flips: '))
+heads_counter = 0
+tails_counter = 0
+    
+for i in range(num_of_flips):
+    rand = random.randint(1,2)
+    if rand == 1:
+        heads_counter += 1
+        print('\nHeads', heads_counter)
+        print('Tails', tails_counter)
+    else:
+        tails_counter += 1
+        print('\nTails', tails_counter)
+        print('Heads', heads_counter)
+            
+print('Heads: ', heads_counter)
+print('Tails: ', tails_counter)
